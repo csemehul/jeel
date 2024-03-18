@@ -1,44 +1,55 @@
+/* Global Styles */
+
 * {
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Roboto, sans-serif; /* Material Design font */
 }
 
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh; /* Ensures viewport height */
+  display: flex;
+  flex-direction: column; /* Stack header and main content */
 }
+
+/* Header */
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #4c4c4c;
-  color: #fff;
-  padding: 10px 20px;
+  padding: 4px 16px; /* Material Design spacing */
+  background-color: #f5f5f5; /* Material Design light grey */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); /* Subtle bottom shadow */
 }
 
 header h1 {
   margin: 0;
+  font-size: 1.5rem; /* Material Design H5 size */
+  font-weight: bold;
+  color: #212121; /* Material Design text color */
 }
 
 header button {
-  background-color: #fff;
-  color: #4c4c4c;
+  background-color: #007bff; /* Material Design primary blue */
+  color: white;
   border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
+  border-radius: 4px; /* Material Design border radius */
+  padding: 6px 12px; /* Material Design button padding */
   cursor: pointer;
-  font-weight: bold;
   transition: all 0.3s ease;
 }
 
 header button:hover {
-  background-color: #4c4c4c;
-  color: #fff;
+  background-color: #0069d9; /* Material Design primary blue hover */
 }
 
+/* Main Content */
+
 main {
-  padding: 20px;
+  flex: 1; /* Fills remaining space */
+  padding: 16px; /* Material Design spacing */
 }
 
 form {
@@ -49,115 +60,62 @@ form {
 form textarea {
   height: 100px;
   resize: none;
-  margin-bottom: 10px;
-  padding: 5px;
-  font-size: 18px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  margin-bottom: 16px; /* Material Design spacing */
+  padding: 12px; /* Material Design input padding */
+  font-size: 1rem; /* Material Design body font size */
+  border: 1px solid #ddd; /* Material Design light border */
+  border-radius: 4px; /* Material Design border radius */
 }
 
 form button {
-  background-color: #4c4c4c;
-  color: #fff;
+  background-color: #007bff; /* Material Design primary blue */
+  color: white;
   border: none;
-  border-radius: 5px;
-  padding: 10px;
+  border-radius: 4px; /* Material Design border radius */
+  padding: 8px 16px; /* Material Design button padding */
   cursor: pointer;
-  font-weight: bold;
   transition: all 0.3s ease;
+  margin-top: 16px; /* Material Design spacing */
 }
 
 form button:hover {
-  background-color: #fff;
-  color: #4c4c4c;
-  border: 2px solid #4c4c4c;
+  background-color: #0069d9; /* Material Design primary blue hover */
 }
 
-main div {
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  padding: 10px;
+main section {
+  background-color: white; /* Material Design card background */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); /* Subtle card shadow */
+  border-radius: 4px; /* Material Design border radius */
+  padding: 16px; /* Material Design spacing */
+  margin-bottom: 16px; /* Material Design spacing */
 }
 
-main div p:first-child {
-  font-size: 22px;
+main section p:first-child {
+  font-size: 1.25rem; /* Material Design H6 size */
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px; /* Material Design spacing */
+  color: #212121; /* Material Design text color */
 }
 
-main div p:last-child {
-  font-size: 18px;
-  font-style: italic;
-  color: #666;
+main section p:last-child {
+  font-size: 1rem; /* Material Design body font size */
+  color: #666; /* Material Design secondary text color */
   margin-top: 0;
 }
+
+/* Like Button (Optional) */
+
 .like-button {
-  background-color: lightgrey;
-  border-radius: 20em;
+  background-color: #e0e0e0; /* Material Design light grey */
   border: none;
+  border-radius: 50%; /* Circle shape */
+  padding: 8px; /* Adjust padding as needed */
   cursor: pointer;
-  font-size: 1rem;
-  color: #888;
+  color: #666; /* Material Design secondary text color */
 }
 
 .like-button:hover {
-  color: white;
-  background-color: lightcoral;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-section {
-  flex: 1;
-  margin-right: 1rem;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 1rem;
-}
-
-form {
-  flex: 1;
-}
-
-textarea {
-  width: 100%;
-  height: 8rem;
-  margin-bottom: 1rem;
-}
-
-button {
-  padding: 0.5rem;
-  background-color: #0077ff;
-  color: white;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
-}
-
-button:disabled {
-  opacity: 0.5;
-  cursor: default;
-}
-
-
-.imggl{
-
-width: 1em;
-
+  background-color: #bdbdbd; /* Material Design light grey hover */
+  color: #444; /* Darker text color on hover */
 }
