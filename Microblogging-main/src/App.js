@@ -98,7 +98,7 @@ function App() {
   return (
     <div>
       <header>
-        <h1>Gk microblog</h1>
+        <h1>Jeel Solanki Microblogging MERN Stack Project</h1>
         {user ? (
           <div>
             <p>Welcome, {user.displayName}!</p>
