@@ -1,6 +1,6 @@
 microblogging - bytexl project
 
-Contributors: Jeel Solanki 
+Contributors: Mehul Singh
 
 welcome to my page 
 
